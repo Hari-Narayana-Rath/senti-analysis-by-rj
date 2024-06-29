@@ -11,7 +11,7 @@ def predict_sentiment(text, sia_model):
         return "Negative 😔"
 
 def load_sentiment_model():
-    with open('sia.pkl', 'rb') as f:
+    with open('pk.pkl', 'rb') as f:
         sia_model = pickle.load(f)
     return sia_model
 
