@@ -14,7 +14,7 @@ def main():
         selected = option_menu(
             menu_title=None,
             options=["Home", "Project", "Connect with me"],
-            icons=["house", "rocket", "envelope"],
+            icons=["house", "rocket", "connect"],
         )
 
     if selected == "Home":
