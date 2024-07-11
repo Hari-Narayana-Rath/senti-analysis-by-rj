@@ -14,7 +14,7 @@ def main():
         selected = option_menu(
             menu_title=None,
             options=["Home", "Project", "Connect with me"],
-            icons=["house", "rocket", <i class="fab fa-github"></i>],
+            icons=["house", "rocket","envolope"],
         )
 
     if selected == "Home":
