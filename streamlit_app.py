@@ -1,32 +1,62 @@
 import streamlit as st
-import pickle
-import pandas as pd
-
-def predict_sentiment(text, sia_model):
-
-    prediction = sia_model.polarity_scores(text)
-    if prediction['pos'] > prediction['neg']:
-        return "Positive 😁"
-    else:
-        return "Negative 😔"
-
-def load_sentiment_model():
-    with open('pk.pkl', 'rb') as f:
-        sia_model = pickle.load(f)
-    return sia_model
+from streamlit_option_menu import option_menu
+import projects  # Importing the projects module
 
 def main():
-    st.title("Sentiment Analysis🎭")
+    st.markdown(
+        """
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        """,
+        unsafe_allow_html=True
+    )
+    
+    with st.sidebar:
+        selected = option_menu(
+            menu_title=None,
+            options=["Home", "Project", "Contact"],
+            icons=["house", "rocket", "envelope"],
+        )
 
-    user_input = st.text_input("Enter something NEGATIVE or POSITIVE to analyze:")
+    if selected == "Home":
+        st.title("Hi im raj")
+        st.write("go to projects there's nothing here")
 
-    if user_input:
-        sia_model = load_sentiment_model()  # Load model only when needed
-        prediction = predict_sentiment(user_input, sia_model)
-        st.write(f"Sentiment: {prediction}")
+    elif selected == "Project":
+        projects.display_projects()  # Calling the function from projects.py
 
-    st.markdown("---")
-    st.markdown("Made with ❤️ by RAJ")
+    elif selected == "Contact":
+        st.title("Contact Me")
+        github_button = st.markdown(
+            """
+            <style>
+            .github-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #24292e;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .github-button:hover {
+                background-color: #444;
+            }
+            .github-button i {
+                margin-right: 10px;
+            }
+            </style>
+            <a href="https://github.com/Hari-Narayana-Rath" class="github-button" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            """,
+            unsafe_allow_html=True
+        )
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
