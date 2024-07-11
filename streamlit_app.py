@@ -13,7 +13,7 @@ def main():
     with st.sidebar:
         selected = option_menu(
             menu_title=None,
-            options=["Home", "Project", "Contact"],
+            options=["Home", "Project", "Connect with me"],
             icons=["house", "rocket", "envelope"],
         )
 
@@ -24,7 +24,7 @@ def main():
     elif selected == "Project":
         projects.display_projects()  # Calling the function from projects.py
 
-    elif selected == "Contact":
+    elif selected == "Connect with me":
         st.title("Contact Me")
         github_button = st.markdown(
             """
