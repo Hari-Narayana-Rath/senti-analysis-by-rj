@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-import projects  # Importing the projects module
+import projects 
 
 def main():
     st.markdown(
@@ -13,16 +13,13 @@ def main():
     with st.sidebar:
         selected = option_menu(
             menu_title=None,
-            options=["Home", "Project", "Connect with me"],
-            icons=["house", "rocket","envelope"],
+            options=["Project", "Connect with me"],
+            icons=["rocket","envelope"],
         )
 
-    if selected == "Home":
-        st.title("Hi im raj")
-        st.write("go to projects there's nothing here")
 
-    elif selected == "Project":
-        projects.display_projects()  # Calling the function from projects.py
+    if selected == "Project":
+        projects.display_projects() 
 
     elif selected == "Connect with me":
         st.title("Contact Me")
