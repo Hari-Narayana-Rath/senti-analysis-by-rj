@@ -18,7 +18,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/YourUsername/YourRepositoryName.git
+    git clone https://github.com/senti-analysis-by-rj
     cd YourRepositoryName
     ```
 
@@ -63,3 +63,6 @@ To run this project locally, follow these steps:
 Ensure all dependencies are installed by running:
 ```bash
 pip install -r requirements.txt
+
+
+Made with ❤️ by RAJ
