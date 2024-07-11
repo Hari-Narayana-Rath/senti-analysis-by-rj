@@ -63,6 +63,5 @@ To run this project locally, follow these steps:
 Ensure all dependencies are installed by running:
 ```bash
 pip install -r requirements.txt
-
-
-Made with ❤️ by RAJ
+```
+#Made with ❤️ by RAJ
