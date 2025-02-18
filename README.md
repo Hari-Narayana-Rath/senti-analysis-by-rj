@@ -12,7 +12,6 @@ This project is a sentiment analysis application that predicts the sentiment of 
 
 You can try out the application live [here](https://senti-analysis-by-raj.streamlit.app/).
 
-## Installation
 
 
 
