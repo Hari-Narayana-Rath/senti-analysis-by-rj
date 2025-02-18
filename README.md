@@ -15,5 +15,6 @@ You can try out the application live [here](https://senti-analysis-by-raj.stream
 
 
 
-# Made with ❤️ by RAJ
+
+# Made with ❤️ by RAJ (Solely for academic or research purposes, please pull the repo for learning instead of stealing and deploying it.)
 
