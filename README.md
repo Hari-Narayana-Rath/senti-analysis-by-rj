@@ -14,56 +14,7 @@ You can try out the application live [here](https://senti-analysis-by-raj.stream
 
 ## Installation
 
-To run this project locally, follow these steps:
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/senti-analysis-by-rj
-    cd YourRepositoryName
-    ```
-
-2. **Create a virtual environment**:
-    ```bash
-    python -m venv venv
-    ```
-
-3. **Activate the virtual environment**:
-    - On Windows:
-        ```bash
-        venv\Scripts\activate
-        ```
-    - On macOS/Linux:
-        ```bash
-        source venv/bin/activate
-        ```
-
-4. **Install the required packages**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-5. **Run the Streamlit app**:
-    ```bash
-    streamlit run streamlit_app.py
-    ```
-
-## Usage
-
-1. Open the Streamlit app in your web browser (usually `http://localhost:8501`).
-2. Enter a text input in the provided field.
-3. Click the "Analyze" button to see the sentiment prediction.
-
-## Dependencies
-
-- Python 3.6+
-- Streamlit
-- NLTK
-- Pandas
-
-Ensure all dependencies are installed by running:
-```bash
-pip install -r requirements.txt
-```
 
 # Made with ❤️ by RAJ
 
